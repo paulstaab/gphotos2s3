@@ -1,5 +1,7 @@
 #/bin/sh
 
+limit-backup-time
+
 echo "gphotos2s3: Staring Backup"
 
 # Execute the backup
