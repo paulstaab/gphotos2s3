@@ -1,0 +1,16 @@
+#/bin/sh
+
+echo "gphotos2s3: Staring Backup"
+
+# Execute the backup
+rclone sync ${rclone_args} gphotos:media/by-month s3encrypted:
+
+if [ "$?" == "0" ]; then 
+	echo "gphotos2s3: Backup finished sucessfully"
+else
+	echo "gphotos2s3: Backup failed"
+	exit 1
+fi
+
+exit 0
+
