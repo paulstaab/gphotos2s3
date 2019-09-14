@@ -16,7 +16,7 @@ variables. I recommended to create rclone sources for gdrive, s3 and
 encrypted s3 locally, test them an get the values from the rclone config
 file.
 
-As describe in the 
+As described in the 
 [rclone documentation for Google Drive](https://rclone.org/drive) you should [create your own
 Google Drive Client Id](https://rclone.org/drive/#making-your-own-client-id) for this.
 
@@ -35,7 +35,7 @@ docker run -i -t --rm \
   -e enc_secret1=<secret> \ # Encryption PW
   -e enc_secret2=<secret> \ # Salt
   -e rclone_args=<additional_arguments_for_rclone> \
-  paulstaab/gdrive2s3
+  paulstaab/gphotos2s3
 ```
 
 ## Encryption
@@ -46,3 +46,4 @@ can not judge how reliable the encryption is. Your files are definitely not secu
 if you are running the container in a cloud service (like I do), since you have
 to upload both encryption secret and the access token for your Google Drive to
 the service.
+
