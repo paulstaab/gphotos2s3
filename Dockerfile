@@ -1,4 +1,4 @@
-FROM rclone/rclone:lastest
+FROM rclone/rclone:latest
 
 # Copy runscript
 COPY bin /usr/local/bin/
