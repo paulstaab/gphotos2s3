@@ -1,14 +1,8 @@
-FROM rclone/rclone:latest
+FROM paulstaab/gdrive2s3
 
-# Copy runscript
+# Overwrite scripts
+USER root
 COPY bin /usr/local/bin/
 RUN chmod +x /usr/local/bin/*
-
-# Add a non-privileged user
-RUN adduser -S rclone
 USER rclone
-WORKDIR /home/rclone
 
-# Start the backup automatically
-ENTRYPOINT ["docker-entrypoint.sh"]
-CMD backup
