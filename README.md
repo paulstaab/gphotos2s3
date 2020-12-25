@@ -8,6 +8,10 @@ but it should run wherever you can execute Docker containers.
 **Do not use this container unless you fully understand what it is doing.
 Your files are at risk. I take no responsibility for lost data.**
 
+**Due to limitations of the Google Photos API, this may backup your photos and videos 
+only in reduced resolution and with missing metadata, see 
+[here](https://rclone.org/googlephotos/#downloading-images).**
+
 
 ## Usage
 
